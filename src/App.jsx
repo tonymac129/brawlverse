@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Brawlers from "./Brawlers";
 import Home from "./Home";
 import Cosmetics from "./Cosmetics";
@@ -25,7 +25,7 @@ const ScrollToTop = () => {
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <NavBar />
       <ScrollToTop />
       <Routes>
@@ -43,7 +43,7 @@ function App() {
         ))}
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
